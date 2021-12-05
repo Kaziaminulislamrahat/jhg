@@ -10,5 +10,5 @@ for url in df['urls']:
   response= requests.get(url)
   status= response.status_code
   df['status']=status
-  if status == 404:
+  if status == 403:
     print(url)
